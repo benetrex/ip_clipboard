@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "ip-clipboard"
+version = "0.1.0"
+description = "Copies the current IP-Adress to the clipboard"
+authors = ["Benedikt Treckmann <benedikt.treckmann@cancom.de>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "ip_clipboard"}]
+
+[tool.poetry.dependencies]
+python = "^3.8.1"
+requests = "^2.28.2"
+pyperclip = "^1.8.2"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.1.0"
+flake8 = "^6.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
